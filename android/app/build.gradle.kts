@@ -14,7 +14,7 @@ val keyProperties = Properties().apply {
 val hasReleaseKey = keyProperties.getProperty("storeFile") != null
 
 android {
-    namespace = "com.pastemangax.pastemangax"
+    namespace = "com.wymdxiao.reader"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
@@ -24,7 +24,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.pastemangax.reader"
+        applicationId = "com.wymdxiao.reader"
         minSdk = flutter.minSdkVersion
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode

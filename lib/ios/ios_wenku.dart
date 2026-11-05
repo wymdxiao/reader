@@ -231,9 +231,9 @@ class _IosWenkuPageState extends State<IosWenkuPage> {
     ),
     const InsetGroup(
       title: '会同步什么',
-      footer: '同步只从源站到栞间：源站书架里的作品会加入书架，并补上没读过的作品上次读到哪一章。栞间里的阅读记录不会上传。',
+      footer: '同步只从源站到reader：源站书架里的作品会加入书架，并补上没读过的作品上次读到哪一章。reader里的阅读记录不会上传。',
       children: [
-        IosRow(icon: 'book', title: '书架', subtitle: '源站收藏的轻小说 → 栞间书架', chevron: false),
+        IosRow(icon: 'book', title: '书架', subtitle: '源站收藏的轻小说 → reader书架', chevron: false),
         IosRow(icon: 'history', title: '书签进度', subtitle: '源站记录的那一章 → 继续阅读', chevron: false),
       ],
     ),
@@ -258,7 +258,7 @@ class _IosWenkuPageState extends State<IosWenkuPage> {
         alignment: Alignment.topCenter,
         child: InsetGroup(
           title: '同步',
-          footer: '同步只从源站到栞间。源站没有全站阅读历史，阅读记录只保存在本机。',
+          footer: '同步只从源站到reader。源站没有全站阅读历史，阅读记录只保存在本机。',
           children: [
             IosRow(icon: 'refresh', title: '立即同步', subtitle: status, chevron: false, valueWidget: _busy ? const CupertinoActivityIndicator() : null, onTap: _busy ? null : _sync),
             if (_lastSync != null) ...[

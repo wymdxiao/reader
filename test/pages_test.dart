@@ -3,16 +3,16 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:package_info_plus/package_info_plus.dart';
-import 'package:pastemangax/core/account.dart';
-import 'package:pastemangax/core/shelf_sync.dart';
-import 'package:pastemangax/core/store.dart';
-import 'package:pastemangax/core/update_service.dart';
-import 'package:pastemangax/ios/ios_account.dart';
-import 'package:pastemangax/ios/ios_app.dart';
-import 'package:pastemangax/ios/ios_mine.dart';
-import 'package:pastemangax/ios/ios_novel.dart';
-import 'package:pastemangax/ios/ios_shelf.dart';
-import 'package:pastemangax/ios/ios_theme.dart';
+import 'package:reader/core/account.dart';
+import 'package:reader/core/shelf_sync.dart';
+import 'package:reader/core/store.dart';
+import 'package:reader/core/update_service.dart';
+import 'package:reader/ios/ios_account.dart';
+import 'package:reader/ios/ios_app.dart';
+import 'package:reader/ios/ios_mine.dart';
+import 'package:reader/ios/ios_novel.dart';
+import 'package:reader/ios/ios_shelf.dart';
+import 'package:reader/ios/ios_theme.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 /// 两端用同一套界面，每个用例在 iOS 和 Android 上各跑一遍。
@@ -23,7 +23,7 @@ void uiTest(String name, WidgetTesterCallback body) =>
 void main() {
   setUp(() async {
     SharedPreferences.setMockInitialValues({});
-    PackageInfo.setMockInitialValues(appName: '栞间', packageName: 'com.pastemangax.reader', version: '0.3.0', buildNumber: '3', buildSignature: '');
+    PackageInfo.setMockInitialValues(appName: 'reader', packageName: 'com.wymdxiao.reader', version: '0.3.0', buildNumber: '3', buildSignature: '');
     await initStores();
     await AccountService.instance.load();
     AccountService.autoSync = false;
@@ -124,11 +124,11 @@ void main() {
       'tag_name': 'v0.4.0',
       'name': 'v0.4.0',
       'body': '## 新增\n- 两端界面统一\n- **省流**画质',
-      'html_url': 'https://github.com/luminacry/-kan-JIAN/releases/tag/v0.4.0',
+      'html_url': 'https://github.com/wymdxiao/reader/releases/tag/v0.4.0',
       'published_at': '2026-11-05T08:00:00Z',
       'assets': [
-        {'name': 'kanjian-v0.4.0.apk', 'size': 19293798, 'browser_download_url': 'https://example.com/a.apk'},
-        {'name': 'kanjian-v0.4.0-unsigned.ipa', 'size': 7757782, 'browser_download_url': 'https://example.com/a.ipa'},
+        {'name': 'reader-v0.4.0.apk', 'size': 19293798, 'browser_download_url': 'https://example.com/a.apk'},
+        {'name': 'reader-v0.4.0-unsigned.ipa', 'size': 7757782, 'browser_download_url': 'https://example.com/a.ipa'},
       ],
     }, '0.3.0', ext: ios ? '.ipa' : '.apk', requirePackage: ios);
     expect(r.release!.packageUrl, ios ? 'https://example.com/a.ipa' : 'https://example.com/a.apk');

@@ -107,7 +107,7 @@ class UpdateService {
   final _dio = Dio(BaseOptions(
     connectTimeout: const Duration(seconds: 10),
     receiveTimeout: const Duration(seconds: 15),
-    headers: {'Accept': 'application/vnd.github+json', 'User-Agent': 'kanjian-reader'},
+    headers: {'Accept': 'application/vnd.github+json', 'User-Agent': 'reader'},
     // 404（还没有发布版本）和 403（限流）自己处理，不当作异常。
     validateStatus: (s) => s != null && s < 500,
   ));

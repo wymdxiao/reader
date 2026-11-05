@@ -33,7 +33,7 @@ jobs:
       - name: 打包 IPA
         run: |
           version=$(sed -n 's/^version: *\([0-9.]*\).*/\1/p' pubspec.yaml)
-          ipa="kanjian-v$version-unsigned.ipa"
+          ipa="reader-v$version-unsigned.ipa"
           mkdir -p build/ipa/Payload
           cp -R build/ios/iphoneos/Runner.app build/ipa/Payload/
           (cd build/ipa && zip -qry "../$ipa" Payload)
@@ -42,7 +42,7 @@ jobs:
 
       - uses: actions/upload-artifact@v5
         with:
-          name: kanjian-ios
+          name: reader-ios
           path: ${{ env.IPA }}
           if-no-files-found: error
 

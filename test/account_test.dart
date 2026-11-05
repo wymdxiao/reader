@@ -3,9 +3,9 @@ import 'dart:typed_data';
 
 import 'package:dio/dio.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:pastemangax/core/account.dart';
-import 'package:pastemangax/core/api.dart';
-import 'package:pastemangax/core/store.dart';
+import 'package:reader/core/account.dart';
+import 'package:reader/core/api.dart';
+import 'package:reader/core/store.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 /// 假网络层：记录请求，按路径返回预设响应。

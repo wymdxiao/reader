@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:pastemangax/ui/novel_pages.dart';
+import 'package:reader/ui/novel_pages.dart';
 
 const _style = TextStyle(fontSize: 19, height: 1.85, letterSpacing: .3);
 

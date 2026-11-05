@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:pastemangax/core/models.dart';
+import 'package:reader/core/models.dart';
 
 /// fixtures 为真实接口的原始响应；detail / chapters / chapter 三个文件只含 results 部分。
 Map<String, dynamic> fixture(String name, {bool envelope = true}) {

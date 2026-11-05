@@ -3,8 +3,8 @@ import 'dart:typed_data';
 
 import 'package:dio/dio.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:pastemangax/core/store.dart';
-import 'package:pastemangax/core/update_service.dart';
+import 'package:reader/core/store.dart';
+import 'package:reader/core/update_service.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 /// 假网络层：按 host 决定返回什么，用来验证直连失败后是否切镜像。
@@ -30,15 +30,15 @@ class _MirrorAdapter implements HttpClientAdapter {
 
 Map<String, dynamic> release({String tag = 'v0.3.0', List<Map<String, dynamic>>? assets, String body = '## 更新\n- 书架排序\n- **省流**画质'}) => {
       'tag_name': tag,
-      'name': '栞间 $tag',
+      'name': 'reader $tag',
       'body': body,
-      'html_url': 'https://github.com/luminacry/-kan-JIAN/releases/tag/$tag',
+      'html_url': 'https://github.com/wymdxiao/reader/releases/tag/$tag',
       'published_at': '2026-11-05T08:00:00Z',
       'assets': assets ??
           [
             {'name': 'checksums.txt', 'size': 120, 'browser_download_url': 'https://example.com/checksums.txt'},
-            {'name': 'kanjian-arm64-v8a.apk', 'size': 12000000, 'browser_download_url': 'https://example.com/arm64.apk'},
-            {'name': 'kanjian-0.3.0.apk', 'size': 19293798, 'browser_download_url': 'https://example.com/universal.apk'},
+            {'name': 'reader-arm64-v8a.apk', 'size': 12000000, 'browser_download_url': 'https://example.com/arm64.apk'},
+            {'name': 'reader-0.3.0.apk', 'size': 19293798, 'browser_download_url': 'https://example.com/universal.apk'},
           ],
     };
 
@@ -99,7 +99,7 @@ void main() {
       final withIpa = UpdateService.resolve(
           200,
           release(assets: [
-            {'name': 'kanjian-0.3.0.ipa', 'size': 30000000, 'browser_download_url': 'https://example.com/a.ipa'},
+            {'name': 'reader-0.3.0.ipa', 'size': 30000000, 'browser_download_url': 'https://example.com/a.ipa'},
           ]),
           '0.2.0',
           ext: '.ipa',

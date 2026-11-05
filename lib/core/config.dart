@@ -60,7 +60,7 @@ class AppConfig {
   static const defaultProxy = String.fromEnvironment('PROXY');
 
   /// 应用更新从这个仓库的 GitHub Releases 获取。
-  static const githubRepo = 'luminacry/-kan-JIAN';
+  static const githubRepo = 'wymdxiao/reader';
   static const githubPage = 'https://github.com/$githubRepo';
 
   /// Releases 列表页：更新检测或安装失败时，让用户直接去这里手动下载。

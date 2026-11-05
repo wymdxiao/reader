@@ -3,10 +3,10 @@ import 'dart:typed_data';
 
 import 'package:dio/dio.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:pastemangax/core/api.dart';
-import 'package:pastemangax/core/config.dart';
-import 'package:pastemangax/core/routes.dart';
-import 'package:pastemangax/core/store.dart';
+import 'package:reader/core/api.dart';
+import 'package:reader/core/config.dart';
+import 'package:reader/core/routes.dart';
+import 'package:reader/core/store.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 /// 按 host 决定行为的假网络层：返回正常 JSON、业务失败或抛网络错误。

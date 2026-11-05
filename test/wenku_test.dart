@@ -4,8 +4,8 @@ import 'dart:typed_data';
 import 'package:dio/dio.dart';
 import 'package:fast_gbk/fast_gbk.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:pastemangax/core/wenku.dart';
-import 'package:pastemangax/core/wenku_models.dart';
+import 'package:reader/core/wenku.dart';
+import 'package:reader/core/wenku_models.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 /// 站点结构照真实页面写；正文和书名都是自己编的，不用源站内容。

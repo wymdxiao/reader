@@ -593,7 +593,7 @@ class _IosReaderPageState extends State<IosReaderPage> {
           ),
           const SizedBox(height: 10),
           Text(
-            c.isLock ? '源站已将这一话标记为付费内容。\n栞间不会请求本话的图片。' : '源站没有返回这一话的图片，可以换一话试试。',
+            c.isLock ? '源站已将这一话标记为付费内容。\nreader不会请求本话的图片。' : '源站没有返回这一话的图片，可以换一话试试。',
             textAlign: TextAlign.center,
             style: const TextStyle(fontSize: 15, height: 1.55, color: IosColors.dMuted),
           ),

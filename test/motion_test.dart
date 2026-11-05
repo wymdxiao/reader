@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:pastemangax/ui/motion.dart';
+import 'package:reader/ui/motion.dart';
 
 /// 记录 initState 次数：被重新挂载就会多一次。
 class _Probe extends StatefulWidget {

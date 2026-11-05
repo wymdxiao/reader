@@ -1,4 +1,4 @@
-package com.pastemangax.pastemangax
+package com.wymdxiao.reader
 
 import android.content.Intent
 import android.net.Uri

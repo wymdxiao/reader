@@ -3,7 +3,7 @@
     <!-- 应用内下载更新后直接调起系统安装器 -->
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
     <application
-        android:label="栞间"
+        android:label="reader"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <!-- 把缓存目录里的安装包以 content:// 交给系统安装器 -->

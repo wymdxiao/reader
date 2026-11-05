@@ -7,7 +7,7 @@ class SampleNovel {
 
   static const id = 'sample-novel';
   static const title = '雨停之前';
-  static const author = '栞间编辑部';
+  static const author = 'reader编辑部';
 
   static ShelfEntry createEntry() => ShelfEntry(
         id: id,

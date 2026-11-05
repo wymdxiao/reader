@@ -154,9 +154,9 @@ class _IosAccountPageState extends State<IosAccountPage> {
     ),
     const InsetGroup(
       title: '会同步什么',
-      footer: '同步只从拷贝漫画到栞间：源站书架里的作品会加入追更，浏览历史会补上本机没有的阅读位置。栞间里的追更暂时不能写回源站。',
+      footer: '同步只从拷贝漫画到reader：源站书架里的作品会加入追更，浏览历史会补上本机没有的阅读位置。reader里的追更暂时不能写回源站。',
       children: [
-        IosRow(icon: 'book', title: '书架', subtitle: '源站收藏的漫画 → 栞间追更', chevron: false),
+        IosRow(icon: 'book', title: '书架', subtitle: '源站收藏的漫画 → reader追更', chevron: false),
         IosRow(icon: 'history', title: '浏览历史', subtitle: '最后看到的那一话 → 继续阅读', chevron: false),
       ],
     ),
@@ -183,7 +183,7 @@ class _IosAccountPageState extends State<IosAccountPage> {
         alignment: Alignment.topCenter,
         child: InsetGroup(
           title: '同步',
-          footer: '打开应用时会自动同步（30 分钟内同步过就跳过）。同步只从源站到栞间，栞间里的追更暂时不能写回源站。',
+          footer: '打开应用时会自动同步（30 分钟内同步过就跳过）。同步只从源站到reader，reader里的追更暂时不能写回源站。',
           children: [
             IosRow(icon: 'refresh', title: '立即同步', subtitle: status, chevron: false, valueWidget: _account.busy ? const CupertinoActivityIndicator() : null, onTap: _account.busy ? null : _sync),
             if (r != null) ...[

@@ -196,7 +196,7 @@ class _IosMinePageState extends State<IosMinePage> {
             onTap: _clearHistory,
           ),
         ]),
-        InsetGroup(title: '关于', footer: '栞间只是阅读器：不内置账号，不绕过付费与会员限制。作品实时来自源站，版权归原作者和权利人所有。', children: [
+        InsetGroup(title: '关于', footer: 'reader只是阅读器：不内置账号，不绕过付费与会员限制。作品实时来自源站，版权归原作者和权利人所有。', children: [
           IosRow(
             icon: 'download',
             title: '检查更新',

@@ -383,7 +383,7 @@ class _IosDetailPageState extends State<IosDetailPage> {
     if (_detail?.isLock ?? false) {
       return Padding(
         padding: EdgeInsets.fromLTRB(20, 14, 20, 0),
-        child: Text('源站把这部作品标记为付费或会员内容，栞间不提供绕过方式。', style: TextStyle(fontSize: 13, color: IosColors.accent)),
+        child: Text('源站把这部作品标记为付费或会员内容，reader不提供绕过方式。', style: TextStyle(fontSize: 13, color: IosColors.accent)),
       );
     }
     return const SizedBox.shrink();

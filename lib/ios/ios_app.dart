@@ -79,7 +79,7 @@ class _IosAppState extends State<IosApp> with WidgetsBindingObserver {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: '栞间',
+      title: 'reader',
       debugShowCheckedModeBanner: false,
       theme: buildAppTheme(),
       // 根部挂一个 1×1 的隐藏 WebView：轻小说源站拦下 HTTP 客户端时用它取页面。

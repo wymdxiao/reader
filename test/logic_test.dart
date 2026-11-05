@@ -2,9 +2,9 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:pastemangax/core/models.dart';
-import 'package:pastemangax/core/store.dart';
-import 'package:pastemangax/ui/format.dart';
+import 'package:reader/core/models.dart';
+import 'package:reader/core/store.dart';
+import 'package:reader/ui/format.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 Map<String, dynamic> fixture(String name, {bool envelope = true}) {
